@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(226, 236, 245);
+}
+
+.page {
+  height: 100svh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem 1rem 3rem;
+  box-shadow: 0px 0px 10px #00000021;
+}
+
+nav img {
+  width: 3rem;
+  height: auto;
+}
+
+.seccion {
+  height: 50svh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  display: grid;
+  align-items: center;
+}
+
+.titulo {
+  text-align: left;
+  padding-left: 5em;
+}
+
+header h1 {
+  width: 5em;
+  line-height: 65px;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+header p {
+  width: 27em;
+  padding-top: 1rem;
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.922);
+}
+
+.juego {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3em;
+}
+
+#jugador {
+  display: grid;
+  grid-template-areas:
+    "jtar1 jtar2"
+    "jtar3 jtar4"
+    "jtar5 jtar6";
+  gap: 0;
+  height: fit-content;
+  padding-right: 4rem;
+}
+
+.juego img {
+  width: 8rem;
+  height: auto;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.juego img:hover {
+  transform: scale(1.07);
+}
+
+.borde-seleccionado {
+  border: 2px solid #000000;
+  border-radius: 15px;
+}
+
+#jtar1 {
+  padding-right: 1rem;
+  grid-area: jtar1;
+}
+#jtar2 {
+  grid-area: jtar2;
+}
+#jtar3 {
+  padding-right: 1rem;
+  grid-area: jtar3;
+}
+#jtar4 {
+  grid-area: jtar4;
+}
+#jtar5 {
+  padding-right: 1rem;
+  grid-area: jtar5;
+}
+#jtar6 {
+  grid-area: jtar6;
+}
+
+#media {
+  display: grid;
+  grid-template-areas:
+    "mtar1 mtar2"
+    "mtar3 mtar4"
+    "mtar5 mtar6";
+  gap: 0;
+  height: fit-content;
+}
+
+#mtar1 {
+  padding-right: 1rem;
+  grid-area: mtar1;
+}
+#mtar2 {
+  grid-area: mtar2;
+}
+#mtar3 {
+  padding-right: 1rem;
+  grid-area: mtar3;
+}
+#mtar4 {
+  grid-area: mtar4;
+}
+#mtar5 {
+  padding-right: 1rem;
+  grid-area: mtar5;
+}
+#mtar6 {
+  grid-area: mtar6;
+}
